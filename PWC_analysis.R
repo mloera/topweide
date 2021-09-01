@@ -18,7 +18,7 @@ rc.3.df <- rc.2.df %>% melt(id.vars = "SNP") %>%
   filter(Allele.Type == 'm') %>%
   group_by(SNP) %>%
   summarise(Min.MAF = min(value, na.rm = T)) %>%
-  filter(Min.MAF > 0.5)
+  filter(Min.MAF > 0.01)
 
 #rc.3.df 
 
