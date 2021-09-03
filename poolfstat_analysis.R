@@ -54,7 +54,7 @@ p1 <- fviz_pca_ind(res.gbs.pca,
              legend.title = "Groups",
              repel = TRUE
              
-) + ggtitle("GBS", subtitle = sprintf("PCA with %d SNPs", topwt@nsnp))# + ggp.cust
+) + ggtitle("GBS", subtitle = sprintf("PCA with %d SNPs", topw@nsnp))# + ggp.cust
 
 ggsave(p1, filename = "GBS_chr1_PCA.pdf", dpi = 'print')
 # AMPSEQ: reading data ----------------------------------------------------
